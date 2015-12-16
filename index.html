@@ -1,0 +1,61 @@
+<!-- Basic Objectives:
+  1) create a tic tac toe board in html
+  2) write javascript to place alternating X's and O's on the board
+  3) don't allow a square that has already been clicked to be clicked again
+    (hint: google how to add classes to elements on click)
+  4) every time a X or O is laid down check the board to see if any more moves
+    are available / if X's or O's has won
+  5) if no more moves are available you probably have a  cats game because you
+    should have been checking for wins
+
+Bonus Objectives:
+  1) have a way to clear out the board for a new game without refreshing the browser
+  2) have the ability for 2 players to enter their names and alert each player when
+    it is their turn
+  3) style it all nice using bootstrap or materialize
+  4) keep track of players wins / loses / ties (* of course this will go away when
+    you refresh your browser because we aren't saving that anywhere)
+  5) have the ability to play 2 different versions of the tic tac toe game
+      a) version 1 is 2 human players against each other
+      b) version 2 is 1 human player against a computer player
+
+  6) instead of just X's and O's text in the boxes, figure out how to add images
+    on click (hint: you can do this via css) -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  </head>
+  <body>
+  <div id="player_one_name" class="player-name"></div>
+  <div id="player_two_name" class="player-name"></div>
+  <div class="row">
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+  </div>
+  <div class="row">
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+  </div>
+  <div class="row">
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+    <div class="tic-tac-toe-box col s3">
+    </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
